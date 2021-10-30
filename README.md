@@ -1,3 +1,19 @@
+## Preview Program
+
+Kurang lebih seperti ini untuk preview si program saat dijalankan.
+
+![Screenshot 2021-10-31 004351](https://user-images.githubusercontent.com/74411596/139543597-54157e21-064e-4851-984d-9c89ed3bebd2.png)
+
+## Utility
+
+-Menggunakan bahasa Java model OOP.
+
+## Perancangan diagram
+
+Menggunakan tools Open Source yakni https://apps-diagram.net
+
+![perpustakaan-diagram drawio](https://user-images.githubusercontent.com/74411596/139543671-e84826ad-3e46-4c74-ae6b-f734693ff4a5.png)
+
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
