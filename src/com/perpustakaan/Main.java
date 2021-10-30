@@ -33,13 +33,13 @@ class Siswa {
 
 // Class lain
 class KeAnggotan {
-   int UID;
+   int UID = 0;
    boolean status = false;
    String nama, NIS;
 
    KeAnggotan(Siswa siswa) {
       this.nama = siswa.nama;
-      this.UID = 1;
+      this.UID += 1;
       this.NIS = siswa.NIS;
    }
 
@@ -49,6 +49,11 @@ class KeAnggotan {
 
    void pinjamBuku(Buku buku) {
       buku.stock -= 1;
+   }
+
+   void kembalikanBuku(Buku buku) {
+      buku.stock += 1;
+      // if buku.stock
    }
 }
 
@@ -78,14 +83,21 @@ class Buku {
 public class Main {
    public static void main(String[] args) {
       Siswa siswa1 = new Siswa("Ilahazs", "XII", "RPL", "1920118111");
-      KeAnggotan anggota1 = new KeAnggotan(siswa1);
-      siswa1.daftarAnggota(anggota1);
+      Siswa siswa2 = new Siswa("DIO", "XII", "TKJ", "1920118100");
+      // new KeAnggotan(siswa1);
+      siswa1.daftarAnggota(new KeAnggotan(siswa1));
+      siswa2.daftarAnggota(new KeAnggotan(siswa2));
       // siswa1.profile();
 
       // EKSEKUSI BUKU
       Buku buku1 = new Buku("Ksatria Batman", "Diluc", 25, 10);
       buku1.show();
-      anggota1.pinjamBuku(buku1);
+      siswa1.anggota.pinjamBuku(buku1);
       buku1.show();
+      siswa1.anggota.kembalikanBuku(buku1);
+      buku1.show();
+
+      // System.out.println(siswa1.anggota.UID);
+      // System.out.println(siswa2.anggota.UID);
    }
 }
