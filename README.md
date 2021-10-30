@@ -6,7 +6,13 @@ Kurang lebih seperti ini untuk preview si program saat dijalankan.
 
 ## Utility
 
-Menggunakan bahasa Java model OOP.
+-Menggunakan bahasa Java model OOP.
+
+## Perancangan diagram
+
+Menggunakan tools Open Source yakni https://app-diagram.net
+
+![perpustakaan-diagram drawio](https://user-images.githubusercontent.com/74411596/139543671-e84826ad-3e46-4c74-ae6b-f734693ff4a5.png)
 
 ## Getting Started
 
